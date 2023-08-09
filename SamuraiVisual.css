@@ -5,23 +5,33 @@
 }
 .game-board{
     width: 100%;
-    height: 500px;
+    height: 650px;
     border-bottom: 15px solid green;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#BF00FF, #E0F6FF);
+    background-image: "C:/Users/fake2/Downloads/162564-nature-landscape-pixel-art-pixelated-pixels-mountains-Wavestormed-trees-spring-forest-lake-reflection-pink-clouds.png";
+    background: linear-gradient(#990F02, #E0F6FF);
+}
+.sakura{
+    position: absolute;
+    width: 300px ;
+    animation: sakuranimation 10s infinite linear;
+    top: 370px;
+    z-index: 0;
 }
 .pipe{
     position: absolute;
     bottom: 0;
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
+    z-index: 1;
 }
 .samurailouco{
     width: 100px;
     position: absolute;
     bottom: 0;
+    z-index: 1;
 }
 
 .jump{
@@ -32,6 +42,13 @@
     position: absolute;
     width: 550px;
     animation: clouds-animation 20s infinite linear;
+}
+
+.dragon{
+    position: absolute;
+    width: 300px;
+    animation: dragoninsane 25s infinite linear;
+    top: 100px;
 }
 
 @keyframes pipe-animation {
@@ -67,5 +84,21 @@
     }
     to {
         right: 100%
+    }
+}
+@keyframes dragoninsane {
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+}
+@keyframes sakuranimation {
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
     }
 }
