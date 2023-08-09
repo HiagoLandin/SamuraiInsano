@@ -22,9 +22,10 @@ const loop = setInterval(() => {
         samurailouco.style.animation = 'none';
         samurailouco.style.bottom = samurailoucoPosition + 'px';
 
-        samurailouco.src = 'C:\\Users\\fake2\\Downloads\\unnamed.png';
-        samurailouco.style.width = '75px';
-        samurailouco.style.marginLeft = '50px';
+        samurailouco.src = "C:/Users/fake2/Downloads/Zero.webp";
+        samurailouco.style.width = '115px';
+        samurailouco.style.marginRight = '50px';
+        samurailouco.style.marginBottom = '-5px';
 
         clearInterval(loop);
     }
