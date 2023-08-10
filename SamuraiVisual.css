@@ -50,6 +50,13 @@
     animation: dragoninsane 25s infinite linear;
     top: 100px;
 }
+.sakura2{
+    position: absolute;
+    width: 300px ;
+    animation: sakuranimation2 13s infinite linear;
+    top: 370px;
+    z-index: 0;
+}
 
 @keyframes pipe-animation {
     from {
@@ -95,6 +102,15 @@
     }
 }
 @keyframes sakuranimation {
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes sakuranimation2 {
     from{
         right: -550px;
     }
