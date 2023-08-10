@@ -1,5 +1,6 @@
 const samurailouco = document.querySelector('.samurailouco');
 const pipe = document.querySelector('.pipe');
+const sakura = document.querySelector('.sakura');
 
 const jump = () => {
     samurailouco.classList.add('jump');
@@ -11,6 +12,7 @@ const jump = () => {
 
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
+    const sakuraPosition= sakura.offsetLeft;
     const samurailoucoPosition = +window.getComputedStyle(samurailouco).bottom.replace('px', '');
 
     console.log(samurailoucoPosition);
@@ -18,6 +20,9 @@ const loop = setInterval(() => {
     if (pipePosition <= 120 && pipePosition > 0 && samurailoucoPosition < 80) {
         pipe.style.animation = 'none';
         pipe.style.left = pipePosition + 'px';
+
+        sakura.style.animation='none';
+        sakura.style.left = sakuraPosition + 'px';
 
         samurailouco.style.animation = 'none';
         samurailouco.style.bottom = samurailoucoPosition + 'px';
